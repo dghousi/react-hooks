@@ -3,8 +3,8 @@
 
 import * as React from 'react'
 
-function Greeting(props) {
-  const [name, setName] = React.useState(props.initialName)
+function Greeting({initialName}) {
+  const [name, setName] = React.useState(initialName)
 
   function handleChange(event) {
     setName(event.target.value)
